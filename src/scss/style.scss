@@ -1,0 +1,54 @@
+body{
+    background: #F9F9F9;
+}
+
+div.container {
+    margin: 2em auto 0;
+    width: 85%;
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 20vmax;
+        .cell {
+            align-items: center;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            width: 33%;
+            p.letter {
+                font-size: 300%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+div.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    button {
+        display: inline;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div.container {
+        width: 75%;
+    }
+    div.buttons {
+        button {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.container {
+        width: 55%;
+        .row {
+            height: 13vmax;
+        }
+    }
+}
